@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+/* Make the navbar fixed at the top of the screen */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style the navbar buttons */
+.navbar button {
+  color: white;
+  background-color: #0062ff;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  width: 150px; /* Initial width of the buttons */
+  transition: width 0.3s ease-in-out; /* Add a smooth transition */
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Make the navbar buttons expand on hover */
+.navbar button:hover {
+  width: 200px; /* Adjust the expanded width as needed */
+  background-color:#0099ff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Home Styles */
+.home {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+/* Style for the operator cards */
+.operator-container{
+  margin-top: 100px;
+  margin-left: 50px;
+};
+
+.operator {
+  border: none;
+  padding: 20px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for the operator card titles */
+.operator h2 {
+  margin: 0;
+  font-family: 'Your Trendy Font', sans-serif; /* Replace 'Your Trendy Font' with your preferred font name */
+  font-size: 24px; /* Adjust the font size as needed */
+  letter-spacing: 1px; /* Increase letter spacing for a trendy look */
+  color: #333; /* Text color */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for the operator card content (paragraph) */
+.operator p {
+  margin: 20px 0; /* Increased margin for more space above and below the paragraph */
+  font-family: 'Your Trendy Font', sans-serif; /* Use the same font as headers */
+  font-size: 18px; /* Adjust the font size as needed */
+  letter-spacing: 0.5px; /* Slight letter spacing for paragraphs */
+  color: #555; /* Text color */
+}
+
+/* Text orientation to the left */
+.operator h2, .operator p {
+  text-align: left;
+}
+
+/* Style for the question cards */
+.question-container{
+  margin-top: 100px;
+  margin-left: 50px;
+};
+
+.question {
+  border: none;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for the operator card titles */
+.question h2 {
+  margin: 0;
+  font-family: 'Your Trendy Font', sans-serif; /* Replace 'Your Trendy Font' with your preferred font name */
+  font-size: 24px; /* Adjust the font size as needed */
+  letter-spacing: 1px; /* Increase letter spacing for a trendy look */
+  color: #333; /* Text color */
+}
+
+/* Style for the operator card content (paragraph) */
+.question p {
+  margin: 20px 0; /* Increased margin for more space above and below the paragraph */
+  font-family: 'Your Trendy Font', sans-serif; /* Use the same font as headers */
+  font-size: 18px; /* Adjust the font size as needed */
+  letter-spacing: 0.5px; /* Slight letter spacing for paragraphs */
+  color: #555; /* Text color */
+}
+
+.question ul {
+  margin: 20px 0; /* Increased margin for more space above and below the paragraph */
+  font-family: 'Your Trendy Font', sans-serif; /* Use the same font as headers */
+  font-size: 18px; /* Adjust the font size as needed */
+  letter-spacing: 0.5px; /* Slight letter spacing for paragraphs */
+  color: #555; /* Text color */
+}
+/* Text orientation to the left */
+.question h2, .question p .question ul {
+  text-align: left;
 }
